@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import CustomCursor from './components/CustomCursor';
 import SquareBackground from './components/SquareBackground';
 import TorusBackground from './components/TorusBackground';
+import DragonExperience from './components/DragonExperience';
 
 function App() {
   useEffect(() => {
@@ -38,6 +39,7 @@ function App() {
 
   return (
     <div className="relative min-h-screen bg-background text-white selection:bg-primary/30 selection:text-white">
+      <DragonExperience />
       <TorusBackground />
       <SquareBackground />
       <CustomCursor />
