@@ -4,6 +4,7 @@ import ProductShowcase from './components/ProductShowcase';
 import Features from './components/Features';
 import Storytelling from './components/Storytelling';
 import CTA from './components/CTA';
+import Contact from './components/Contact';
 import CustomCursor from './components/CustomCursor';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Features />
         <Storytelling />
         <CTA />
+        <Contact />
       </main>
 
       <footer className="py-12 border-t border-white/5 text-center text-white/40 glass">
