@@ -25,8 +25,8 @@ const Storytelling = () => {
           style={{ opacity: opacity1, scale: scale1 }}
           className="absolute inset-0 flex flex-col items-center justify-center text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-6xl md:text-8xl font-black mb-8 leading-none">THE JOURNEY BEGINS</h2>
-          <p className="text-xl text-white/60">From the depths of pristine earth to the palm of your hand.</p>
+          <h2 className="text-6xl md:text-8xl font-serif tracking-tight mb-8 leading-none">THE POWER OF TOUCH</h2>
+          <p className="text-xl text-white/60 font-light">Your message doesn't just exist in a feed—it lives in their world.</p>
         </motion.div>
 
         {/* Scene 2 */}
@@ -34,8 +34,8 @@ const Storytelling = () => {
           style={{ opacity: opacity2, scale: scale2 }}
           className="absolute inset-0 flex flex-col items-center justify-center text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-6xl md:text-8xl font-black mb-8 leading-none italic uppercase">Atomic Precision</h2>
-          <p className="text-xl text-white/60">Every drop is refined for the ultimate taste experience.</p>
+          <h2 className="text-6xl md:text-8xl font-serif tracking-tight mb-8 leading-none italic uppercase">Unrivaled Recall</h2>
+          <p className="text-xl text-white/60 font-light">Passive viewing is over. Active engagement is here.</p>
         </motion.div>
 
         {/* Scene 3 */}
@@ -43,8 +43,8 @@ const Storytelling = () => {
           style={{ opacity: opacity3, scale: scale3 }}
           className="absolute inset-0 flex flex-col items-center justify-center text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-6xl md:text-8xl font-black mb-8 leading-none uppercase text-primary">Your Story Awaits</h2>
-          <p className="text-xl text-white/60">Unlock the legend. Taste the future.</p>
+          <h2 className="text-6xl md:text-8xl font-serif tracking-tight mb-8 leading-none uppercase text-primary">Buzz Starts Here</h2>
+          <p className="text-xl text-white/60 font-light">Turn every sip into a story. Let's build your campaign.</p>
         </motion.div>
 
         {/* Dynamic Background Elements */}

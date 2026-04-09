@@ -5,23 +5,23 @@ import { Zap, Droplets, Shield, Sparkles } from 'lucide-react';
 const featureData = [
   {
     icon: <Droplets className="w-8 h-8" />,
-    title: "Pure Source",
-    desc: "Sourced from the heart of the Alps, filtered through centuries of limestone."
+    title: "Eco-Friendly Print",
+    desc: "Biodegradable soy-based inks used on 100% recyclable paper cups."
   },
   {
     icon: <Zap className="w-8 h-8" />,
-    title: "Kinetic Infusion",
-    desc: "Proprietary mixing process that preserves the flavor profile at a molecular level."
+    title: "High Recall Rate",
+    desc: "Average 15-minute engagement time per cup ensures brand memory."
   },
   {
     icon: <Shield className="w-8 h-8" />,
-    title: "Eco-Armor",
-    desc: "100% recyclable glass with UV-protective coating for infinite shelf life."
+    title: "Targeted Reach",
+    desc: "Strategic distribution in high-traffic hubs, offices, and events."
   },
   {
     icon: <Sparkles className="w-8 h-8" />,
-    title: "Aura Glow",
-    desc: "Internal luminescence technology that responds to your environment's mood."
+    title: "Premium Finish",
+    desc: "Vibrant, high-definition printing that makes your brand pop."
   }
 ];
 

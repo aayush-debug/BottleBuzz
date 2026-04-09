@@ -41,8 +41,8 @@ const Hero = () => {
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-1/4 right-[10%] p-4 glass rounded-2xl hidden lg:block"
       >
-        <div className="text-[10px] text-primary mb-1">CRAFTED QUALITY</div>
-        <div className="text-sm font-semibold tracking-tight leading-none uppercase">Est. 2026</div>
+        <div className="text-[10px] text-primary mb-1">MOBILE ADVERTISING</div>
+        <div className="text-sm font-semibold tracking-tight leading-none uppercase">High Visibility</div>
       </motion.div>
 
       <motion.div 
@@ -50,8 +50,8 @@ const Hero = () => {
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         className="absolute bottom-1/4 left-[10%] p-4 glass rounded-2xl hidden lg:block"
       >
-        <div className="text-[10px] text-secondary mb-1">PREMIUM SPIRITS</div>
-        <div className="text-sm font-semibold tracking-tight leading-none uppercase">Pure Distillate</div>
+        <div className="text-[10px] text-secondary mb-1">SUSTAINABLE REACH</div>
+        <div className="text-sm font-semibold tracking-tight leading-none uppercase">Paper & Plastic</div>
       </motion.div>
     </section>
   );

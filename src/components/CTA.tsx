@@ -15,13 +15,13 @@ const CTA = () => {
         className="max-w-6xl mx-auto glass rounded-[4rem] p-20 text-center border-white/5 relative"
       >
         <Leaf className="w-12 h-12 text-primary mx-auto mb-8 opacity-50" />
-        <h2 className="text-6xl md:text-8xl font-serif tracking-tight mb-10 leading-none">
+        <h2 className="text-6xl md:text-8xl font-serif tracking-tight mb-10 leading-none text-white">
           Ready to <br />
-          <span className="text-primary italic">Rewrite</span> the Night?
+          <span className="text-primary italic">Amplify</span> Your Brand?
         </h2>
         
         <p className="text-white/50 text-xl max-w-2xl mx-auto mb-12">
-          Join our exclusive circle and be the first to experience the next evolution of spirits.
+          Partner with BottleBuzz to place your message in the hands of millions. Start your high-impact campaign today.
         </p>
 
         <motion.button
@@ -29,7 +29,7 @@ const CTA = () => {
           whileTap={{ scale: 0.95 }}
           className="px-12 py-5 bg-primary text-background font-bold uppercase tracking-widest rounded-full text-lg hover:shadow-[0_0_30px_rgba(0,243,255,0.6)] transition-all duration-300"
         >
-          Join the Buzz
+          Book a Campaign
         </motion.button>
 
         {/* Floating Icons */}

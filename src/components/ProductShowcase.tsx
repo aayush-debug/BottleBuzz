@@ -14,18 +14,18 @@ const ProductShowcase = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl font-bold mb-6">Designed for the <span className="text-primary">Bold</span></h2>
-          <p className="text-white/60 text-lg leading-relaxed mb-8">
-            Experience the fusion of craftsmanship and technology. Our bottles are more than containers; they are a statement of luxury and futuristic design.
+          <h2 className="text-5xl font-serif mb-6 leading-tight">Your Brand in <br /><span className="text-primary italic">Every Hand</span></h2>
+          <p className="text-white/60 text-lg leading-relaxed mb-8 font-light">
+            We turn everyday utility items—water bottles and paper cups—into powerful advertising vehicles. Capture attention where it matters most: in the hands of your audience.
           </p>
           <div className="flex gap-4">
             <div className="p-4 glass rounded-xl flex-1">
-              <div className="text-primary text-xl font-bold">100%</div>
-              <div className="text-xs uppercase text-white/40">Pure Distillate</div>
+              <div className="text-primary text-xl font-bold">5M+</div>
+              <div className="text-xs uppercase text-white/40">Monthly Impressions</div>
             </div>
             <div className="p-4 glass rounded-xl flex-1">
-              <div className="text-secondary text-xl font-bold">Cold</div>
-              <div className="text-xs uppercase text-white/40">Filtered</div>
+              <div className="text-secondary text-xl font-bold">Eco</div>
+              <div className="text-xs uppercase text-white/40">Certified Cups</div>
             </div>
           </div>
         </motion.div>
