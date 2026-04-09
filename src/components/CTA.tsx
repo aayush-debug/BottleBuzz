@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import { Leaf } from 'lucide-react';
 
 const CTA = () => {
   return (
@@ -14,7 +14,8 @@ const CTA = () => {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto glass rounded-[4rem] p-20 text-center border-white/5 relative"
       >
-        <h2 className="text-6xl md:text-8xl font-black uppercase mb-10 tracking-tighter leading-none">
+        <Leaf className="w-12 h-12 text-primary mx-auto mb-8 opacity-50" />
+        <h2 className="text-6xl md:text-8xl font-serif tracking-tight mb-10 leading-none">
           Ready to <br />
           <span className="text-primary italic">Rewrite</span> the Night?
         </h2>

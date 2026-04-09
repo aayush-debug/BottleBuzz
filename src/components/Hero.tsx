@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import { Leaf } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -9,14 +9,17 @@ const Hero = () => {
       <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-secondary/10 blur-[120px] rounded-full" />
 
       <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
         className="text-center z-10 px-4"
       >
-        <h1 className="text-7xl md:text-9xl font-black uppercase tracking-tighter mb-4 leading-none">
-          Bottle<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Buzz</span>
-        </h1>
+        <div className="flex flex-col items-center">
+          <Leaf className="w-12 h-12 text-primary mb-4 animate-pulse opacity-50" />
+          <h1 className="text-8xl md:text-[10rem] font-serif tracking-tight mb-4 leading-none">
+            BottleBuzz
+          </h1>
+        </div>
         <p className="text-xl md:text-2xl font-light text-white/60 tracking-widest uppercase">
           Turn every sip into a story.
         </p>
