@@ -1,5 +1,8 @@
-import { useRef } from 'react';
+import { useRef, Suspense } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { Canvas } from '@react-three/fiber';
+import { Environment, ContactShadows, Float } from '@react-three/drei';
+import Bottle from './Bottle';
 
 const Storytelling = () => {
   const containerRef = useRef(null);
@@ -20,6 +23,23 @@ const Storytelling = () => {
     <section ref={containerRef} className="h-[300vh] relative px-10">
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
         
+        {/* 3D Bottle Background/Focus */}
+        <div className="absolute inset-0 pointer-events-none">
+          <Canvas camera={{ position: [0, 0, 8], fov: 35 }}>
+            <ambientLight intensity={0.5} />
+            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+            <Suspense fallback={null}>
+              <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.5}>
+                <group>
+                  <Bottle scrollProgress={scrollYProgress} />
+                </group>
+              </Float>
+              <Environment preset="city" />
+              <ContactShadows position={[0, -2.5, 0]} opacity={0.4} scale={10} blur={2} far={4.5} />
+            </Suspense>
+          </Canvas>
+        </div>
+
         {/* Scene 1 */}
         <motion.div 
           style={{ opacity: opacity1, scale: scale1 }}

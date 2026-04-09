@@ -1,14 +1,24 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { MeshDistortMaterial, MeshWobbleMaterial, Float } from '@react-three/drei';
+import { Float } from '@react-three/drei';
 import * as THREE from 'three';
+import { MotionValue } from 'framer-motion';
 
-const Bottle = () => {
+interface BottleProps {
+  scrollProgress?: MotionValue<number>;
+}
+
+const Bottle = ({ scrollProgress }: BottleProps) => {
   const meshRef = useRef<THREE.Mesh>(null);
 
-  useFrame((state) => {
+  useFrame(() => {
     if (meshRef.current) {
-      meshRef.current.rotation.y += 0.005;
+      if (scrollProgress) {
+        meshRef.current.rotation.y = scrollProgress.get() * Math.PI * 4;
+        meshRef.current.position.y = (scrollProgress.get() - 0.5) * -4;
+      } else {
+        meshRef.current.rotation.y += 0.005;
+      }
     }
   });
 
