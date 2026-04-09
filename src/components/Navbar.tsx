@@ -29,9 +29,15 @@ const Navbar = () => {
         <div className="hidden md:flex gap-8 text-sm font-medium text-white/70">
           <a href="#" className="hover:text-primary transition-colors">Partners</a>
         </div>
-        <button className="px-6 py-2 rounded-full glass border-primary/20 hover:border-primary/50 text-xs font-bold uppercase tracking-widest transition-all hover:neon-border whitespace-nowrap">
-          Start Campaign
-        </button>
+        <a 
+          href="https://forms.gle/eBoAQp7LK1qy1p9M7" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <button className="px-6 py-2 rounded-full glass border-primary/20 hover:border-primary/50 text-xs font-bold uppercase tracking-widest transition-all hover:neon-border whitespace-nowrap">
+            Start Campaign
+          </button>
+        </a>
       </div>
     </motion.nav>
   );

@@ -24,13 +24,19 @@ const CTA = () => {
           Partner with BottleBuzz to place your message in the hands of millions. Start your high-impact campaign today.
         </p>
 
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-12 py-5 bg-primary text-background font-bold uppercase tracking-widest rounded-full text-lg hover:shadow-[0_0_30px_rgba(0,243,255,0.6)] transition-all duration-300"
+        <a 
+          href="https://forms.gle/eBoAQp7LK1qy1p9M7" 
+          target="_blank" 
+          rel="noopener noreferrer"
         >
-          Book a Campaign
-        </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-12 py-5 bg-primary text-background font-bold uppercase tracking-widest rounded-full text-lg hover:shadow-[0_0_30px_rgba(0,243,255,0.6)] transition-all duration-300"
+          >
+            Book a Campaign
+          </motion.button>
+        </a>
 
         {/* Floating Icons */}
         <div className="absolute top-10 left-10 w-4 h-4 rounded-full bg-primary/40 animate-pulse" />
