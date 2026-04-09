@@ -18,14 +18,14 @@ const Navbar = () => {
       </div>
       
       <div className="hidden md:flex gap-8 text-sm font-medium text-white/70">
-        <a href="#" className="hover:text-primary transition-colors">Vintages</a>
-        <a href="#" className="hover:text-primary transition-colors">Heritage</a>
-        <a href="#" className="hover:text-primary transition-colors">Process</a>
-        <a href="#" className="hover:text-primary transition-colors">Club</a>
+        <a href="#" className="hover:text-primary transition-colors">Our Approach</a>
+        <a href="#" className="hover:text-primary transition-colors">Surface Options</a>
+        <a href="#" className="hover:text-primary transition-colors">Impact Data</a>
+        <a href="#" className="hover:text-primary transition-colors">Partners</a>
       </div>
 
       <button className="px-6 py-2 rounded-full glass border-primary/20 hover:border-primary/50 text-xs font-bold uppercase tracking-widest transition-all hover:neon-border">
-        Reserve Now
+        Start Campaign
       </button>
     </motion.nav>
   );

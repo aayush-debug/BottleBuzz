@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Zap, Droplets, Shield, Sparkles } from 'lucide-react';
 

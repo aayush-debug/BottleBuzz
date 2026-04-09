@@ -33,10 +33,26 @@ const Bottle = () => {
           <meshStandardMaterial color="#00f3ff" metalness={0.8} roughness={0.2} />
         </mesh>
 
-        {/* Liquid Indicator */}
-        <mesh position={[0, -0.5, 0]}>
-          <cylinderGeometry args={[0.9, 0.9, 2, 32]} />
-          <meshStandardMaterial color="#bc13fe" transparent opacity={0.6} emissive="#bc13fe" emissiveIntensity={0.5} />
+        {/* Brandable Label Area */}
+        <mesh position={[0, -0.2, 0]}>
+          <cylinderGeometry args={[0.92, 0.92, 1.8, 32]} />
+          <meshStandardMaterial color="#00f3ff" roughness={0.3} metalness={0.2} transparent opacity={0.8} />
+          {/* Subtle logo/text placeholder on label */}
+          <mesh position={[0, 0, 0.95]}>
+            <planeGeometry args={[0.8, 0.8]} />
+            <meshStandardMaterial color="#ffffff" transparent opacity={0.4} />
+          </mesh>
+        </mesh>
+
+        {/* Liquid (Water) */}
+        <mesh position={[0, -0.8, 0]}>
+          <cylinderGeometry args={[0.85, 0.85, 1.2, 32]} />
+          <meshPhysicalMaterial 
+            color="#ffffff" 
+            transmission={1} 
+            thickness={0.1} 
+            roughness={0} 
+          />
         </mesh>
       </mesh>
     </Float>
