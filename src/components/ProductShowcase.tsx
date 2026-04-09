@@ -1,48 +1,48 @@
-import { Canvas } from '@react-three/fiber';
-import { Environment, ContactShadows, OrbitControls } from '@react-three/drei';
-import Bottle from './Bottle';
 import { motion } from 'framer-motion';
 
 const ProductShowcase = () => {
   return (
-    <section className="h-screen relative grid grid-cols-1 lg:grid-cols-2 items-center px-10">
-      <div className="z-10 max-w-xl">
+    <section className="min-h-screen relative flex items-center justify-center px-10 py-20 overflow-hidden">
+      {/* Background Glows */}
+      <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-primary/20 blur-[150px] -z-10" />
+      <div className="absolute bottom-1/2 right-1/4 w-[500px] h-[500px] bg-secondary/10 blur-[150px] -z-10" />
+
+      <div className="z-10 max-w-4xl text-center">
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1.2 }}
         >
-          <h2 className="text-5xl font-serif mb-6 leading-tight">Your Brand in <br /><span className="text-primary italic">Every Hand</span></h2>
-          <p className="text-white/60 text-lg leading-relaxed mb-8 font-light italic">
+          <div className="mb-8 inline-block px-4 py-1 rounded-full border border-primary/30 text-primary text-[10px] uppercase tracking-widest font-bold">
+            Redefining Impressions
+          </div>
+          <h2 className="text-6xl md:text-8xl font-serif mb-10 leading-tight">Your Brand in <br /><span className="text-primary italic">Every Hand</span></h2>
+          <p className="text-white/60 text-xl md:text-2xl leading-relaxed mb-12 font-light italic max-w-2xl mx-auto">
             "A blank canvas for your biggest ideas."
           </p>
-          <p className="text-white/60 text-lg leading-relaxed mb-8 font-light">
+          <p className="text-white/60 text-lg md:text-xl leading-relaxed mb-16 font-light max-w-3xl mx-auto">
             We provide a pure, minimalist canvas. Imagine your logo, your colors, and your story printed with precision on high-quality utility items. 
           </p>
-          <div className="flex gap-4">
-            <div className="p-4 glass rounded-xl flex-1">
-              <div className="text-primary text-xl font-bold">5M+</div>
-              <div className="text-xs uppercase text-white/40">Monthly Impressions</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="p-6 glass rounded-[2rem] border-white/5">
+              <div className="text-primary text-3xl font-bold mb-1">5M+</div>
+              <div className="text-[10px] uppercase text-white/40 tracking-widest font-bold">Impressions</div>
             </div>
-            <div className="p-4 glass rounded-xl flex-1">
-              <div className="text-secondary text-xl font-bold">Eco</div>
-              <div className="text-xs uppercase text-white/40">Certified Cups</div>
+            <div className="p-6 glass rounded-[2rem] border-white/5">
+              <div className="text-secondary text-3xl font-bold mb-1">Eco</div>
+              <div className="text-[10px] uppercase text-white/40 tracking-widest font-bold">Certified</div>
+            </div>
+            <div className="p-6 glass rounded-[2rem] border-white/5">
+              <div className="text-primary text-3xl font-bold mb-1">100%</div>
+              <div className="text-[10px] uppercase text-white/40 tracking-widest font-bold">Recyclable</div>
+            </div>
+            <div className="p-6 glass rounded-[2rem] border-white/5">
+              <div className="text-secondary text-3xl font-bold mb-1">HD</div>
+              <div className="text-[10px] uppercase text-white/40 tracking-widest font-bold">Printing</div>
             </div>
           </div>
         </motion.div>
-      </div>
-
-      <div className="h-[60vh] lg:h-full cursor-grab active:cursor-grabbing">
-        <Canvas camera={{ position: [0, 0, 8], fov: 35 }}>
-          <ambientLight intensity={0.5} />
-          <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
-          <pointLight position={[-10, -10, -10]} intensity={0.5} color="#bc13fe" />
-          <Bottle />
-          <Environment preset="city" />
-          <ContactShadows position={[0, -2.5, 0]} opacity={0.4} scale={10} blur={2} far={4.5} />
-          <OrbitControls enableZoom={false} makeDefault />
-        </Canvas>
       </div>
       
       {/* Background Section Title */}
