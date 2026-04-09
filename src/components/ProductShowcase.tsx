@@ -14,8 +14,11 @@ const ProductShowcase = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-5xl font-serif mb-6 leading-tight">Your Brand in <br /><span className="text-primary italic">Every Hand</span></h2>
+          <p className="text-white/60 text-lg leading-relaxed mb-8 font-light italic">
+            "A blank canvas for your biggest ideas."
+          </p>
           <p className="text-white/60 text-lg leading-relaxed mb-8 font-light">
-            We turn everyday utility items—water bottles and paper cups—into powerful advertising vehicles. Capture attention where it matters most: in the hands of your audience.
+            We provide a pure, minimalist canvas. Imagine your logo, your colors, and your story printed with precision on high-quality utility items. 
           </p>
           <div className="flex gap-4">
             <div className="p-4 glass rounded-xl flex-1">

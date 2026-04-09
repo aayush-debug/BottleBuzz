@@ -14,7 +14,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-serif mb-12 uppercase tracking-tighter">Get in Touch</h2>
           
           <a 
-            href="mailto:hello@bottlebuzz.com"
+            href="mailto:bottlebuzz7@gmail.com"
             className="group relative inline-block w-full max-w-2xl px-8 py-12 glass rounded-[2rem] border-primary/10 hover:border-primary/40 transition-all duration-500 overflow-hidden"
           >
             {/* Background Glow Effect */}
@@ -28,7 +28,7 @@ const Contact = () => {
               <div className="space-y-2">
                 <p className="text-white/40 text-sm uppercase tracking-[0.3em]">Drop us a line</p>
                 <p className="text-3xl md:text-4xl font-serif tracking-tight text-white group-hover:text-primary transition-colors">
-                  hello@bottlebuzz.com
+                  bottlebuzz7@gmail.com
                 </p>
               </div>
 

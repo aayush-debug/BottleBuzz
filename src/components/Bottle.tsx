@@ -40,29 +40,24 @@ const Bottle = ({ scrollProgress }: BottleProps) => {
         {/* Bottle Cap */}
         <mesh position={[0, 1.6, 0]}>
           <cylinderGeometry args={[0.55, 0.55, 0.2, 32]} />
-          <meshStandardMaterial color="#00f3ff" metalness={0.8} roughness={0.2} />
+          <meshStandardMaterial color="#cccccc" metalness={0.5} roughness={0.2} />
         </mesh>
 
-        {/* Brandable Label Area */}
+        {/* Blank Canvas Label Area */}
         <mesh position={[0, -0.2, 0]}>
-          <cylinderGeometry args={[0.92, 0.92, 1.8, 32]} />
-          <meshStandardMaterial color="#00f3ff" roughness={0.3} metalness={0.2} transparent opacity={0.8} />
-          {/* Subtle logo/text placeholder on label */}
+          <cylinderGeometry args={[0.92, 0.92, 2.2, 32]} />
+          <meshStandardMaterial color="#f0f0f0" roughness={0.3} metalness={0} />
+          {/* Mockup Placeholder Text/Indication */}
           <mesh position={[0, 0, 0.95]}>
-            <planeGeometry args={[0.8, 0.8]} />
-            <meshStandardMaterial color="#ffffff" transparent opacity={0.4} />
+            <planeGeometry args={[1.2, 1.2]} />
+            <meshStandardMaterial color="#e0e0e0" transparent opacity={0.5} />
           </mesh>
         </mesh>
 
-        {/* Liquid (Water) */}
+        {/* Minimal Bottle Base (White Porcelain/Plastic style) */}
         <mesh position={[0, -0.8, 0]}>
           <cylinderGeometry args={[0.85, 0.85, 1.2, 32]} />
-          <meshPhysicalMaterial 
-            color="#ffffff" 
-            transmission={1} 
-            thickness={0.1} 
-            roughness={0} 
-          />
+          <meshStandardMaterial color="#ffffff" roughness={0.1} />
         </mesh>
       </mesh>
     </Float>
