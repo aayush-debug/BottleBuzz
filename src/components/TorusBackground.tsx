@@ -27,7 +27,7 @@ const TorusKnot = ({ scrollProgress, position, color, speed }: {
         <MeshDistortMaterial 
           color={color}
           transparent
-          opacity={0.05}
+          opacity={0.15}
           distort={0.4}
           speed={2}
           wireframe
@@ -41,7 +41,7 @@ const TorusBackground = () => {
   const { scrollYProgress } = useScroll();
 
   return (
-    <div className="fixed inset-0 pointer-events-none -z-30 overflow-hidden">
+    <div className="fixed inset-0 pointer-events-none -z-15 overflow-hidden">
       <Canvas camera={{ position: [0, 0, 50], fov: 75 }}>
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} intensity={1} color="#00f3ff" />

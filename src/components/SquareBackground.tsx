@@ -13,7 +13,7 @@ const SquareBackground = () => {
   }));
 
   return (
-    <div className="fixed inset-0 pointer-events-none -z-20 overflow-hidden bg-background">
+    <div className="fixed inset-0 pointer-events-none -z-20 overflow-hidden">
       {squares.map((square) => (
         <motion.div
            key={square.id}
