@@ -6,9 +6,16 @@ const Navbar = () => {
     <motion.nav 
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 left-0 w-full z-50 px-10 py-6 flex justify-between items-center bg-background/50 backdrop-blur-md border-b border-white/5"
+      className="fixed top-0 left-0 w-full z-50 px-10 py-6 grid grid-cols-3 items-center bg-background/50 backdrop-blur-md border-b border-white/5"
     >
-      <div className="flex items-center gap-1">
+      {/* Left: Links */}
+      <div className="hidden md:flex gap-8 text-sm font-medium text-white/70">
+        <a href="#" className="hover:text-primary transition-colors">Approach</a>
+        <a href="#" className="hover:text-primary transition-colors">Impact</a>
+      </div>
+      
+      {/* Center: Logo */}
+      <div className="flex justify-center">
         <div className="flex flex-col items-center -mb-2">
           <Leaf className="w-3 h-3 text-primary fill-primary/20 rotate-45 ml-6" />
           <div className="text-2xl font-serif tracking-tight leading-none group cursor-pointer hover:text-primary transition-colors">
@@ -16,17 +23,16 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      
-      <div className="hidden md:flex gap-8 text-sm font-medium text-white/70">
-        <a href="#" className="hover:text-primary transition-colors">Our Approach</a>
-        <a href="#" className="hover:text-primary transition-colors">Surface Options</a>
-        <a href="#" className="hover:text-primary transition-colors">Impact Data</a>
-        <a href="#" className="hover:text-primary transition-colors">Partners</a>
-      </div>
 
-      <button className="px-6 py-2 rounded-full glass border-primary/20 hover:border-primary/50 text-xs font-bold uppercase tracking-widest transition-all hover:neon-border">
-        Start Campaign
-      </button>
+      {/* Right: CTA Button */}
+      <div className="flex justify-end gap-8 items-center">
+        <div className="hidden md:flex gap-8 text-sm font-medium text-white/70">
+          <a href="#" className="hover:text-primary transition-colors">Partners</a>
+        </div>
+        <button className="px-6 py-2 rounded-full glass border-primary/20 hover:border-primary/50 text-xs font-bold uppercase tracking-widest transition-all hover:neon-border whitespace-nowrap">
+          Start Campaign
+        </button>
+      </div>
     </motion.nav>
   );
 };
