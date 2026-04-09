@@ -11,7 +11,6 @@ const Navbar = () => {
       {/* Left: Links */}
       <div className="hidden md:flex gap-8 text-sm font-medium text-white/70">
         <a href="#" className="hover:text-primary transition-colors">Approach</a>
-        <a href="#" className="hover:text-primary transition-colors">Impact</a>
       </div>
       
       {/* Center: Logo */}
@@ -26,9 +25,6 @@ const Navbar = () => {
 
       {/* Right: CTA Button */}
       <div className="flex justify-end gap-8 items-center">
-        <div className="hidden md:flex gap-8 text-sm font-medium text-white/70">
-          <a href="#" className="hover:text-primary transition-colors">Partners</a>
-        </div>
         <a 
           href="https://forms.gle/eBoAQp7LK1qy1p9M7" 
           target="_blank" 
