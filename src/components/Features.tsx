@@ -36,6 +36,10 @@ const Features = () => {
         {featureData.map((feature, idx) => (
           <motion.div
             key={idx}
+            initial={{ opacity: 0, scale: 0.95, y: 30 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", stiffness: 40, damping: 20, delay: idx * 0.1 }}
             whileHover={{ y: -10 }}
             className="p-8 glass rounded-3xl border-white/5 hover:border-primary/30 transition-all duration-500 group"
           >

@@ -12,7 +12,7 @@ const ProductShowcase = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.2 }}
+          transition={{ type: "spring", stiffness: 40, damping: 20 }}
         >
           <div className="mb-8 inline-block px-4 py-1 rounded-full border border-primary/30 text-primary text-[10px] uppercase tracking-widest font-bold">
             Redefining Impressions

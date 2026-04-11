@@ -9,7 +9,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ type: "spring", stiffness: 40, damping: 20 }}
         >
           <h2 className="text-4xl md:text-5xl font-serif mb-12 uppercase tracking-tighter">Get in Touch</h2>
           

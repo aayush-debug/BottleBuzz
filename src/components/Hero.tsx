@@ -11,7 +11,7 @@ const Hero = () => {
       <motion.div 
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
+        transition={{ type: "spring", stiffness: 50, damping: 20, delay: 0.2 }}
         className="text-center z-10 px-4"
       >
         <div className="flex flex-col items-center">
